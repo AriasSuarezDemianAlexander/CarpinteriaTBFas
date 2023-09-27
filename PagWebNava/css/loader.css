@@ -1,0 +1,42 @@
+.sisi{
+    z-index: 99;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #2D2C32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden{
+overflow: hidden;
+}
+.preloader{
+    width: 250px;
+    height:250px;
+    background: rgb(2,0,36);
+    background:linear-gradient(90deg,rgba(156, 156, 156, 0.003)0%, rgb(0, 0, 0) 100%);
+    display: inline-block;
+    border-radius: 50%;
+    animation-name: girarb;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
+@keyframes girarb{
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+.image{
+    width: 350px;
+    height:450px;
+    position:absolute;
+}
